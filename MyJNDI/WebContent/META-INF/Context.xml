@@ -1,0 +1,17 @@
+<Context path="/MyJNDI" docBase="D:\GitHub\JavaEE_Projs\MyJNDI" privileged="true" reloadable="true">
+	<!-- 其中name指定数据源在容器中的JNDI名
+	driverClassName指定连接数据库的驱动
+	url指定数据库服务的URL
+	username指定连接数据库的用户名
+	password指定连接数据库的密码
+	maxActive指定数据源最大活动连接数
+	maxIdle指定数据池中最大的空闲连接数
+	maxWait指定数据池中最大等待获取连接的客户端
+	-->
+	<Resource name="jdbc/jndi" auth="Container"
+		type="javax.sql.DataSource" 
+		driverClassName="org.gjt.mm.mysql.Driver"
+		url="jdbc:mysql://192.168.1.10:3306/db_javaee"
+		username="root" password="root" maxActive="8"
+		maxIdle="2" maxWait="10000"/>
+</Context>
