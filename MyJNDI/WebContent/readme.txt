@@ -1,7 +1,7 @@
-²Î¿¼µÄÁ´½Ó£º
-TomcatÅäÖÃJNDIÊı¾İÔ´ - ÎÒµÄÂşÂş³ÌĞòÖ®ÂÃ - BlogJava  http://www.blogjava.net/supercrsky/articles/174931.html
+å‚è€ƒçš„é“¾æ¥ï¼š
+Tomcaté…ç½®JNDIæ•°æ®æº - æˆ‘çš„æ¼«æ¼«ç¨‹åºä¹‹æ—… - BlogJava  http://www.blogjava.net/supercrsky/articles/174931.html
 
 https://my.oschina.net/u/553734/blog/115957
-java.sql.SQLException: No suitable driver ÎÊÌâ½â¾ö
-¼ì²éÅäÖÃÎÄ¼şºÍ¼ÓÔØµÄjar°ü¶¼Ã»ÓĞÎÊÌâ£¬²éÔÄ½â¾ö°ì·¨ºó
-ÔÚ%JAVA_HOME%\jre\lib\extÏÂÌí¼Ómysql-connector-java-5.1.12-bin.jar ÎÊÌâ½â¾ö£¡
+java.sql.SQLException: No suitable driver é—®é¢˜è§£å†³
+æ£€æŸ¥é…ç½®æ–‡ä»¶å’ŒåŠ è½½çš„jaråŒ…éƒ½æ²¡æœ‰é—®é¢˜ï¼ŒæŸ¥é˜…è§£å†³åŠæ³•å
+åœ¨%JAVA_HOME%\jre\lib\extä¸‹æ·»åŠ mysql-connector-java-5.1.12-bin.jar é—®é¢˜è§£å†³ï¼
