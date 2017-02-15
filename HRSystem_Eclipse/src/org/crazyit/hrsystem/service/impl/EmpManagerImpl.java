@@ -110,12 +110,12 @@ public class EmpManagerImpl
 				.get(Calendar.HOUR_OF_DAY) < AM_LIMIT)
 			{
 				// 上班打卡
-				a.setIsCome(true);
+				a.setCome(true);
 			}
 			else
 			{
 				// 下班打卡
-				a.setIsCome(false);
+				a.setCome(false);
 			}
 			a.setEmployee(e);
 			attendDao.save(a);
@@ -178,7 +178,7 @@ public class EmpManagerImpl
 		}
 		// 开始上班打卡
 		else if (attends.size() == 1
-			&& attends.get(0).getIsCome()
+			&& attends.get(0).isCome()
 			&& attends.get(0).getPunchTime() == null)
 		{
 			return COME_PUNCH;

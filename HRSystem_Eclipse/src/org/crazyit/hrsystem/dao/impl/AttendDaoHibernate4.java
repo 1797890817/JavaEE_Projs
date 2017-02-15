@@ -60,7 +60,7 @@ public class AttendDaoHibernate4 extends BaseDaoHibernate4<Attend>
 		{
 			for (Attend attend : al)
 			{
-				if (attend.getIsCome() == isCome )
+				if (attend.isCome() == isCome )
 				{
 					return attend;
 				}

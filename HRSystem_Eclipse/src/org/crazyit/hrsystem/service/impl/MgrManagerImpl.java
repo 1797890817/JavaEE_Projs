@@ -178,7 +178,7 @@ public class MgrManagerImpl
 				for (Application app : apps)
 				{
 					//只选择还未处理的申请
-					if (app.getResult() == false)
+					if (app.isResult() == false)
 					{
 						Attend attend = app.getAttend();
 						result.add(new AppBean(app.getId() ,
