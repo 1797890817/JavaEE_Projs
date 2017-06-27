@@ -1,6 +1,9 @@
 package org.crazyit.hrsystem.vo;
 
 import java.io.Serializable;
+
+import lombok.Getter;
+import lombok.Setter;
 /**
  * Description:
  * <br/>网站: <a href="http://www.crazyit.org">疯狂Java联盟</a>
@@ -11,6 +14,7 @@ import java.io.Serializable;
  * @author  Yeeku.H.Lee kongyeeku@163.com
  * @version  1.0
  */
+@Getter@Setter
 public class SalaryBean
 	implements Serializable
 {
@@ -27,26 +31,6 @@ public class SalaryBean
 	{
 		this.empName = empName;
 		this.amount = amount;
-	}
-
-	// empName的setter和getter方法
-	public void setEmpName(String empName)
-	{
-		this.empName = empName;
-	}
-	public String getEmpName()
-	{
-		return this.empName;
-	}
-
-	// amount的setter和getter方法
-	public void setAmount(double amount)
-	{
-		this.amount = amount;
-	}
-	public double getAmount()
-	{
-		return this.amount;
 	}
 
 }

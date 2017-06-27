@@ -1,11 +1,9 @@
 package org.crazyit.hrsystem.schedule;
 
-import java.util.Date;
-import org.springframework.scheduling.quartz.QuartzJobBean;
+import org.crazyit.hrsystem.service.EmpManager;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
-
-import org.crazyit.hrsystem.service.EmpManager;
+import org.springframework.scheduling.quartz.QuartzJobBean;
 
 /**
  * Description:

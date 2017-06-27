@@ -1,13 +1,31 @@
 package org.crazyit.hrsystem.service.impl;
 
-import org.crazyit.hrsystem.dao.*;
-import org.crazyit.hrsystem.domain.*;
-import org.crazyit.hrsystem.vo.*;
-import org.crazyit.hrsystem.exception.*;
-import org.crazyit.hrsystem.service.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Set;
 
-import java.text.*;
-import java.util.*;
+import org.crazyit.hrsystem.dao.ApplicationDao;
+import org.crazyit.hrsystem.dao.AttendDao;
+import org.crazyit.hrsystem.dao.AttendTypeDao;
+import org.crazyit.hrsystem.dao.CheckBackDao;
+import org.crazyit.hrsystem.dao.EmployeeDao;
+import org.crazyit.hrsystem.dao.ManagerDao;
+import org.crazyit.hrsystem.dao.PaymentDao;
+import org.crazyit.hrsystem.domain.Application;
+import org.crazyit.hrsystem.domain.Attend;
+import org.crazyit.hrsystem.domain.CheckBack;
+import org.crazyit.hrsystem.domain.Employee;
+import org.crazyit.hrsystem.domain.Manager;
+import org.crazyit.hrsystem.domain.Payment;
+import org.crazyit.hrsystem.exception.HrException;
+import org.crazyit.hrsystem.service.MgrManager;
+import org.crazyit.hrsystem.vo.AppBean;
+import org.crazyit.hrsystem.vo.EmpBean;
+import org.crazyit.hrsystem.vo.SalaryBean;
+
+import lombok.Setter;
 
 /**
  * Description:
@@ -19,6 +37,7 @@ import java.util.*;
  * @author  Yeeku.H.Lee kongyeeku@163.com
  * @version  1.0
  */
+@Setter
 public class MgrManagerImpl
 	implements MgrManager
 {
@@ -29,41 +48,6 @@ public class MgrManagerImpl
 	private EmployeeDao empDao;
 	private ManagerDao mgrDao;
 	private PaymentDao payDao;
-
-	public void setAppDao(ApplicationDao appDao)
-	{
-		this.appDao = appDao;
-	}
-
-	public void setAttendDao(AttendDao attendDao)
-	{
-		this.attendDao = attendDao;
-	}
-
-	public void setTypeDao(AttendTypeDao typeDao)
-	{
-		this.typeDao = typeDao;
-	}
-
-	public void setCheckDao(CheckBackDao checkDao)
-	{
-		this.checkDao = checkDao;
-	}
-
-	public void setEmpDao(EmployeeDao empDao)
-	{
-		this.empDao = empDao;
-	}
-
-	public void setMgrDao(ManagerDao mgrDao)
-	{
-		this.mgrDao = mgrDao;
-	}
-
-	public void setPayDao(PaymentDao payDao)
-	{
-		this.payDao = payDao;
-	}
 
 	/**
 	 * 新增员工

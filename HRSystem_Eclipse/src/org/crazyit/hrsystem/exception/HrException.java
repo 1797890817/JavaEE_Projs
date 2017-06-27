@@ -12,6 +12,10 @@ package org.crazyit.hrsystem.exception;
  */
 public class HrException extends RuntimeException
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public HrException(){}
 	public HrException(String msg)
 	{
