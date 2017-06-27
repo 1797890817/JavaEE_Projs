@@ -18,7 +18,7 @@ public class EmpBaseAction extends ActionSupport
 {
 	// 依赖的业务逻辑组件
 	protected EmpManager mgr;
-	// 依赖注入业务逻辑组件所必须的setter方法
+	// 依赖注入业务逻辑组件所必须的setter方法	//提供setter方法，让Spring容器注入需要的组件！
 	public void setEmpManager(EmpManager mgr)
 	{
 		this.mgr = mgr;
